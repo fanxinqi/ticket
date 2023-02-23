@@ -1,0 +1,38 @@
+{
+  "name": "12306",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "commander": "9.5.0",
+    "dayjs": "^1.11.7",
+    "lodash": "^4.17.21",
+    "node-xlsx": "^0.21.0",
+    "puppeteer": "13.5.0",
+    "qs": "^6.11.0",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.4",
+    "underscore": "^1.13.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "27.0.6",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "chat": "node special/chat/liepin/chat-bot.js",
+    "get-chat-data": "node special/chat/liepin/get-chat-data.js",
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
