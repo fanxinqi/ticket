@@ -80,8 +80,8 @@ class BrowerPage {
       if (request.isInterceptResolutionHandled()) return;
       if (
         // request.url().endsWith(".css") ||
-        request.url().endsWith(".png") ||
-        request.url().endsWith(".jpg") ||
+        // request.url().endsWith(".png") ||
+        // request.url().endsWith(".jpg") ||
         request.url().startsWith("https://res.zhipin.com") ||
         request.url().startsWith("https://arms-retcode.aliyuncs.com") ||
         request.url().startsWith("https://img.bosszhipin.com") ||
